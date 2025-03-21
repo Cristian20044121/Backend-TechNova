@@ -25,7 +25,7 @@ const actividadesSchema = new mongoose.Schema({
     required: true,
   },
   fecha: {
-    type: Date,
+    type: String,
     required: true,
   },
   equipo: {
