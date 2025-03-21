@@ -13,6 +13,10 @@ const PORT = process.env.PORT || 3000;
 const list = ["http://localhost:3000", "https://frontend-technova.vercel.app/"];
 app.use(cors({ origin: list }));
 app.use(express.json());
+
+/**
+ * routes
+ */
 app.use("/api/actividades", routesActividades);
 
 app.get("/", (req, res) => {

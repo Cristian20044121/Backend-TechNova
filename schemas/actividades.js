@@ -23,7 +23,7 @@ const actividadesSchema = new mongoose.Schema({
   minutos: {
     type: Number,
     required: true,
-    min: [0, "El valor mínimo es 0"],
+    min: [1, "El valor mínimo es 0"],
     max: [600, "El valor máximo es 600"],
   },
   fecha: {
